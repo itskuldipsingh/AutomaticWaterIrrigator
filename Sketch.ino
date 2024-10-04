@@ -1,13 +1,12 @@
 // Define the pin numbers
-const int RelayPin = D1;  // Pin D1
+const int RelayPin = D1;  // Connect NodeMCU Pin D1 to Relay IN Pin
 
 // Define Variables
 int RelayOffTime = 30;  // Off Time in seconds
 int RelayOnTime = 5;    // On Time in seconds
 
 void setup() {
-  // Set pin mode
-  pinMode(RelayPin, OUTPUT);
+  pinMode(RelayPin, OUTPUT);  // Set pin mode
 }
 
 void loop() {
